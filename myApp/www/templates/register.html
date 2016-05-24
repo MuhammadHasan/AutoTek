@@ -1,0 +1,28 @@
+<ion-view view-title="Login">
+    <h1 class="text-center">Ionic with MySQL</h1>
+    <ion-content class="padding has-header">
+        <div class="bar bar-subheader">
+            <form>
+                <div class="list">
+                    <label class="item item-input">
+                        <input id="display_Name" type="text" placeholder="Display Name" ng-model="display_Name">
+                    </label>
+                    <label class="item item-input">
+                        <input id="user_email" type="email" placeholder="Your email" ng-model="user_email">
+                    </label>
+                    <label class="item item-input">
+                        <input id="user_password" type="password" placeholder="Your password" ng-model="user_password">
+                    </label>
+                </div>
+                <div class="padding">
+                    <button class="button button-block button-positive" type="submit" ng-click="vm.registerU(display_Name,user_email,user_password)">
+                        Register
+                    </button>
+                    <a ui-sref="login" class="button button-block button-positive">
+                        Login
+                    </a>
+                </div>
+            </form>
+        </div>
+    </ion-content>
+</ion-view>

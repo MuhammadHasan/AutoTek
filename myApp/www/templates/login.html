@@ -1,0 +1,33 @@
+<ion-view style="background-color: rgba(0, 0, 0, 0.47)" view-title="Login">
+    <div class="bar bar-header bar-dark">
+        <h1 class="title">LOGIN</h1>
+    </div>
+    <ion-content class="padding has-header">
+        <h1 style="margin-top: 20px; color: white;" class="text-center">AUTO TEK</h1>
+            <form style="margin-top: 80px">
+                <div class="list">
+                    <label style="background-color: #444444" class="item item-input">
+                        <i style="color: white" class="icon ion-person"></i>
+                        <input style="margin-left: 20px; color: white" id="user_email" name="user_email" type="email" placeholder="Your email" ng-model="user_email">
+                    </label>
+                    <label style="background-color: #444444" class="item item-input">
+                        <i style="color: white" class="icon ion-locked"></i>
+                        <input style="margin-left: 20px; color: white;" id="user_password" name="user_password" type="password" placeholder="Your password" ng-model="user_password">
+                    </label>
+                </div>
+                <div class="padding">
+                    <button style="padding: 0 8px;min-width: initial;min-height: 31px;font-weight: 400;font-size: 13px;line-height: 32px;"
+                            class="button button-block button-dark"
+                            type="submit"
+                            ng-click="vm.loginU(user_email,user_password)">
+                        Login
+                    </button>
+                    <button style="padding: 0 8px;min-width: initial;min-height: 31px;font-weight: 400;font-size: 13px;line-height: 32px;"
+                            ui-sref="register"
+                            class="button button-block button-dark">
+                        Register
+                    </button>
+                </div>
+            </form>
+    </ion-content>
+</ion-view>
